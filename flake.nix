@@ -3,9 +3,11 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
+
+    flake-compat.url = "https://flakehub.com/f/edolstra/flake-compat/1.tar.gz";
   };
 
-  outputs = { self, nixpkgs }:
+  outputs = { self, nixpkgs, flake-compat }:
     let
       pname = "pgroll";
       version = "0.5.0";
