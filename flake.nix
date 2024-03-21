@@ -4,7 +4,8 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
 
-    flake-compat.url = "https://flakehub.com/f/edolstra/flake-compat/1.tar.gz";
+    # flake-compat.url = "https://flakehub.com/f/edolstra/flake-compat/1.tar.gz";
+    flake-compat.url = "github:9999years/flake-compat/fix-64";
   };
 
   outputs = { self, nixpkgs, flake-compat }:
